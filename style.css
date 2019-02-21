@@ -4,7 +4,7 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 /*REMOVE THIS*/
 * {
-    border: 0.05px brown dashed;
+    border: 0.05px rgb(212, 10, 10) dashed;
 }
 
 /*Border box*/
@@ -55,7 +55,11 @@ html {
 }
 
 .nodecor{
-    text-decoration-style: none;
+    text-decoration: none;
+}
+
+.center{
+    text-align:center;
 }
 
 /* Float fix */
@@ -86,11 +90,16 @@ header nav ul{
     float:right;
     list-style: none;
     margin:25px 10%;
-    
+
 }
 
 header nav ul li{
     display: inline;
+    padding: 0 5px;
+}
+
+header nav ul li:hover{
+    text-shadow: 0 0 3px #000;
 }
 
 header nav ul li a{
@@ -98,3 +107,34 @@ header nav ul li a{
     color:black;
 }
 
+header section{
+    background-image: url('assets/image-1.jpg');
+    height:70vh;
+    background-size:cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+header article{
+    width: 60%;
+    background-color:rgba(255,255,255,0.9);
+}
+
+header article h1{
+    margin-top:8%;
+    margin-bottom:0;
+}
+
+header article h4{
+    margin-top:3px;
+}
+
+header article p{
+    margin: 5px 40px 40px;
+    line-height: 1.5;
+}
+
+main{
+    font-family: 'Raleway', sans-serif;
+}
