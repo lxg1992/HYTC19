@@ -22,6 +22,8 @@ html {
 
 /* Style snippets */
 
+
+
 .raleway{
     font-family: 'Raleway', sans-serif;
 }
@@ -62,9 +64,11 @@ html {
     text-align:center;
 }
 
+.bgGray{
+
+}
+
 /* Float fix */
-
-
 
 .clearfix:after {
   visibility: hidden;
@@ -75,11 +79,44 @@ html {
   height: 0;
 }
 
+/*Font adjustment*/
+
+h1{
+    font-size:26px;
+}
+
+h2{
+    font-size:22px;
+}
+
+h3{
+    font-size:18px;
+}
+
+
+/*Containers*/
+
 .container{
     width: 100%;
     margin: 0 auto;
     max-width: 1080px;
 }
+
+.subcontainer{
+    width:80%;
+    margin: 0 auto;
+}
+
+/*Image fit to div*/
+
+.fitdiv{
+    max-width:100%;
+    height:auto;
+}
+
+/*STYLING*/
+
+/*HEADER */
 
 header nav h2{
     float:left;
@@ -109,7 +146,7 @@ header nav ul li a{
 
 header section{
     background-image: url('assets/image-1.jpg');
-    height:70vh;
+    height:80vh;
     background-size:cover;
     display:flex;
     align-items:center;
@@ -135,6 +172,49 @@ header article p{
     line-height: 1.5;
 }
 
+/* MAIN */
+
 main{
     font-family: 'Raleway', sans-serif;
+}
+
+main > h3{
+    margin-top:50px;
+}
+
+.wide article, main aside{
+    background-color:#eeeded
+}
+
+/*Grid*/
+
+.wide{
+    width: calc(100% / 3 * 2);
+    float:left;
+    display: grid;    
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "first second"
+        "third third"
+}
+
+.gridItemA{
+    grid-area: first;
+}
+
+.gridItemB{
+    grid-area: second;
+}
+
+.gridItemC{
+    grid-area: third;
+}
+
+/*About*/
+
+.thin{
+    width: calc(100% / 3);
+    float:left;
+    
 }
