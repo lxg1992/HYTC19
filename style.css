@@ -209,7 +209,7 @@ main article h5{
 }
 
 main article p{
-    font-size:12px;
+    font-size:10px;
     line-height:1.5;
     margin: 0 20px;
 }
@@ -219,7 +219,7 @@ main .subcontainer{
 }
 
 aside p{
-    font-size:12px;
+    font-size:10px;
     line-height:1.5;
     margin: 20px 20px;
 
@@ -292,6 +292,94 @@ main article a{
     grid-gap:25px;
     padding: 5px auto 5px;
 }
+
+/*FOOTER*/
+
+
+
+/*Upper*/
+
+
+
+.upper{
+    background-color:rgb(68, 68, 68);
+
+    
+}
+
+.upper ul{
+    list-style: none;
+    padding:0;
+}
+
+.upper ul li{
+    padding:0 0 8px;
+}
+
+.upper ul li a{
+    color:white;
+    text-decoration: none;
+    font-weight:bold;
+    font-size:12px;
+
+}
+
+.upper ul li a:hover{
+    text-shadow: 0 0 3px #fff;
+}
+
+.upper p{
+    font-size:10px;
+    line-height: 1.75;
+}
+
+.upper h4{
+    margin-bottom:0;
+}
+
+.gridC{
+    display:grid;
+    grid-template-columns: 4fr 1fr 5fr;
+    grid-gap:30px;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+
+
+/* Lower*/
+
+.lower{
+    background-color:black;
+}
+
+form input{
+    display:inline-block;
+    margin: initial 0;
+    width:60%;
+    height:40px;
+    border:none;
+}
+
+input::placeholder{
+    color:black;
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    font-style:italic;
+}
+
+form button{
+    display: inline-block;
+    width:38%;
+    margin: initial 0;
+    height:40px;
+    color:white;
+    background-color:red;
+    border:none;
+}
+
+
+
 
 
 
