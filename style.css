@@ -138,13 +138,12 @@ h5{
 
 header nav h2{
     float:left;
-    margin-left:5%;
 }
 
 header nav ul{
     float:right;
     list-style: none;
-    margin:25px 10px;
+    margin:25px 0 25px;
 
 }
 
@@ -213,7 +212,7 @@ main article h5{
 }
 
 main article p{
-    font-size:10px;
+    font-size:12px;
     line-height:1.5;
     margin: 0 20px;
 }
@@ -223,7 +222,7 @@ main .subcontainer{
 }
 
 aside p{
-    font-size:10px;
+    font-size:12px;
     line-height:1.5;
     margin: 20px 20px;
 
@@ -398,37 +397,116 @@ form button{
         border: 0.05px rgb(212, 10, 10) dashed;
     }
 
+    /*HEADER*/
+
     header nav h2{
         float:none;
         text-align:center;
         margin-left:0 auto;
+        padding-top:20px;
     }
 
     header nav ul{
         display:flex;
-        justify-content:space-around;
+        justify-content:space-between;
         float:none;
         list-style: none;
-        margin:25px 10%;
+        margin:0px 0 20px;
+        padding:0;
 
     }
 
     header nav ul li{
         display: inline;
-        padding: 0 5px;
+        margin-left:0;
+
     }
 
     header section{
-        background-image: url('assets/image-1.jpg');
         height:100vh;
-        background-size:cover;
-        display:flex;
-        align-items:center;
-        justify-content:center;
+    }
+
+    header article{
+        max-width: 100%;
+        width:600px;
+    }
+
+    /*GRID A*/
+
+    .gridA{
+        width: calc(100%);
+        float:none;
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "first second"
+            "third third";
+        grid-gap:25px;
+    }
+
+    .about{
+        margin: 25px auto;
+        width:400px;
+        max-width: calc(100%);
+        float:none;
+        background-color:#d4d4d4
+    }
+
+    .gridB{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:auto;
+        grid-gap:25px;
+        padding: 5px auto 5px;
+    }
+
+    .gridC{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "nav"
+            "div"
+            "form";
+        grid-gap:30px;
+
+    }
+
+    .c1{
+        grid-area:div;
     }
 
 
+    .c3{
+        grid-area:form;
+    }
+
+    .c2 {
+        margin: 0 auto;
+        grid-area:nav;
+        display:flex;
+        justify-content:space-between;
+        list-style: none;
+    }
+
+    .c2 ul li{
+
+    }
+
+
+
+    .subcontainer{
+        width:90%;
+    }
+
 }
+
+
+
+
+
+
 
 
 
