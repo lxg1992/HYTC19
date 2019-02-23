@@ -393,7 +393,7 @@ form button{
 /* Media responsive CSS */
 
 @media screen and (max-width:900px){
-    * {
+    /* {
         border: 0.05px rgb(212, 10, 10) dashed;
     }
 
@@ -462,14 +462,15 @@ form button{
     }
 
     .gridC{
+
         display:grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
         grid-template-areas:
-            "nav"
-            "div"
-            "form";
-        grid-gap:30px;
+            "nav nav"
+            "div form";
+        grid-gap:0px;
+        grid-column-gap:25px;
 
     }
 
@@ -483,10 +484,16 @@ form button{
     }
 
     .c2 {
+
         margin: 0 auto;
         grid-area:nav;
+        width:100%;
+    }
+
+    .c2 ul{
+        width:100%;
         display:flex;
-        justify-content:space-between;
+        justify-content: space-evenly;
         list-style: none;
     }
 
