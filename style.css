@@ -130,9 +130,32 @@ h5{
     height:auto;
 }
 
+/*Animation*/
+
+a{
+    transition: all 0.5s;
+}
+
+button{
+    transition: all 0.5s;
+}
 
 
+
+
+
+nav li:hover{
+    transform: scale(1.2);
+    transition: all 0.2s;
+}
+
+
+p + a:hover {
+    transform:scale(1.5);
+}
 /*STYLING*/
+
+
 
 /*HEADER */
 
@@ -383,6 +406,11 @@ form button{
     border:none;
 }
 
+form button:hover{
+    color:red;
+    background-color:white;
+}
+
 .lower i{
     padding-left:10px;
 }
@@ -397,6 +425,11 @@ form button{
 
 
     /*HEADER*/
+
+    *{
+        /*border: 0.05px rgb(212, 10, 10) dashed;*/
+      
+    }
 
     header nav h2{
         float:none;
@@ -501,9 +534,6 @@ form button{
         list-style: none;
     }
 
-    .c2 ul li{
-
-    }
 
 
 
@@ -514,10 +544,8 @@ form button{
 }
 
 
-@media screen and (max-width:600px){
-    {
-        border: 0.05px rgb(212, 10, 10) dashed;
-    }
+@media screen and (max-width:575px){
+
 
     header ul{
         flex-direction:column;
@@ -571,11 +599,11 @@ form button{
     }
 
     i{
-        font-size:20px;
+        font-size:16px;
     }
 
     .lower span{
-        font-size:20px;
+        font-size:16px;
     }
 
 
